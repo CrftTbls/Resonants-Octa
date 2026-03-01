@@ -30,8 +30,9 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Resonants_octa.MODID)
-public class Resonants_octa {
+@Mod(ResonantsOcta.MODID)
+public class ResonantsOcta
+{
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "resonants_octa";
@@ -61,7 +62,7 @@ public class Resonants_octa {
             output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
 
-    public Resonants_octa() {
+    public ResonantsOcta() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
