@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "org.crafttable.resonants_octa.mixin",
+  "package": "org.crafttable.resonantsocta.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "resonants_octa.refmap.json",
   "mixins": [

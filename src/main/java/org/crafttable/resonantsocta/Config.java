@@ -1,4 +1,4 @@
-package org.crafttable.resonants_octa;
+package org.crafttable.resonantsocta;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
