@@ -1,0 +1,16 @@
+{
+    "representative_item": "minecraft:diamond",
+    "texture_id": "resonants_octa:test_matter",
+    "stats": {
+        "atk": 8.0,
+        "def": 3.0,
+        "tgh": 500.0,
+        "msp": 8.0,
+        "asp": 1.2,
+        "mng": 3.0
+    },
+    "traits": [
+        "resonants_octa:sharp",
+        "resonants_octa:dense"
+    ]
+}

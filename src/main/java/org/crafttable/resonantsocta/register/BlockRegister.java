@@ -18,7 +18,9 @@ public class BlockRegister
 	
 	public static void setUp()
 	{
-		BLOCKS_LIST.computeIfAbsent("example_block", key -> registerBlock(key, () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE))));
+		BLOCKS_LIST.computeIfAbsent("alchemy_crucible", key -> registerBlock(key, () -> new Block(BlockBehaviour.Properties.of())));
+		BLOCKS_LIST.computeIfAbsent("alchemy_station", key -> registerBlock(key, () -> new Block(BlockBehaviour.Properties.of())));
+		BLOCKS_LIST.computeIfAbsent("maintenance_station", key -> registerBlock(key, () -> new Block(BlockBehaviour.Properties.of())));
 	}
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
