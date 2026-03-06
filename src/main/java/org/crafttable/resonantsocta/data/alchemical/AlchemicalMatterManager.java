@@ -46,6 +46,10 @@ public class AlchemicalMatterManager extends SimpleJsonResourceReloadListener {
         return MATTERS.get(id);
     }
 
+    public static Map<ResourceLocation, AlchemicalMatterDefinition> getAll() {
+        return MATTERS;
+    }
+
     @SubscribeEvent
     public static void onAddReloadListeners(AddReloadListenerEvent event) {
         event.addListener(new AlchemicalMatterManager());

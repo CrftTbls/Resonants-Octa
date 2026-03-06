@@ -1,0 +1,16 @@
+{
+    "trait_id": "resonants_octa:test_heavy",
+    "name": "trait.resonants_octa.test_heavy.name",
+    "description": "trait.resonants_octa.test_heavy.desc",
+    "max_level": 3,
+    "effects": [
+        {
+            "effect_id": "resonants_octa:swing_speed_down",
+            "trigger_type": "passive",
+            "base_value": -0.2,
+            "applicable_tool_types": [
+                "resonants_octa:test_sword"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "resonance_id": "resonants_octa:test_resonance",
+    "priority": 100,
+    "required_traits": [
+        {
+            "trait": "resonants_octa:test_strength",
+            "count": 1
+        },
+        {
+            "trait": "resonants_octa:test_heavy",
+            "count": 1
+        }
+    ],
+    "remove_traits": [
+        {
+            "trait": "resonants_octa:test_strength",
+            "count": 1
+        },
+        {
+            "trait": "resonants_octa:test_heavy",
+            "count": 1
+        }
+    ],
+    "add_traits": [
+        {
+            "trait": "resonants_octa:test_mutation",
+            "count": 1
+        }
+    ]
+}

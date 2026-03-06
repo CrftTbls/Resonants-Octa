@@ -1,0 +1,11 @@
+{
+    "tool_type_id": "resonants_octa:test_sword",
+    "base_stats": {
+        "atk": 3.0,
+        "def": 0.0,
+        "tgh": 100.0,
+        "msp": 1.0,
+        "asp": 1.6,
+        "mng": 0.0
+    }
+}

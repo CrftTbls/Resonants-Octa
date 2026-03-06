@@ -1,0 +1,16 @@
+{
+    "trait_id": "resonants_octa:test_strength",
+    "name": "trait.resonants_octa.test_strength.name",
+    "description": "trait.resonants_octa.test_strength.desc",
+    "max_level": 3,
+    "effects": [
+        {
+            "effect_id": "resonants_octa:damage_boost",
+            "trigger_type": "on_hit",
+            "base_value": 2.0,
+            "applicable_tool_types": [
+                "resonants_octa:test_sword"
+            ]
+        }
+    ]
+}

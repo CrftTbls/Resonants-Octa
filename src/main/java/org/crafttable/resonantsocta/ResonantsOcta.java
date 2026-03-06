@@ -96,6 +96,24 @@ public class ResonantsOcta {
                             }
                             return 0.0F;
                         });
+
+                ItemProperties.register(ItemRegister.ITEMS_LIST.get("blueprint_item").get(),
+                        new ResourceLocation(ResonantsOcta.MODID, "blueprint_variant"),
+                        (stack, level, entity, seed) -> {
+                            ResourceLocation blueprintId = org.crafttable.resonantsocta.item.nbt.BlueprintDataHandler
+                                    .getBlueprintId(stack);
+                            org.crafttable.resonantsocta.data.blueprint.BlueprintDefinition bDef = org.crafttable.resonantsocta.data.blueprint.BlueprintManager
+                                    .get(blueprintId);
+                            if (bDef != null) {
+                                ResourceLocation tex = bDef.getTextureId();
+                                // test_sword_basicのテクスチャIDとして指定された場合に1.0Fを返す
+                                if (tex != null
+                                        && tex.equals(new ResourceLocation(ResonantsOcta.MODID, "test_sword_basic"))) {
+                                    return 1.0F;
+                                }
+                            }
+                            return 0.0F;
+                        });
             });
         }
 

@@ -1,0 +1,33 @@
+{
+    "blueprint_id": "resonants_octa:test_sword_basic",
+    "result_item": "resonants_octa:resonant_sword",
+    "tool_type": "resonants_octa:test_sword",
+    "enchant_capacity": 1.0,
+    "stat_multipliers": {
+        "atk": 1.0,
+        "def": 1.0,
+        "tgh": 1.0,
+        "msp": 1.0,
+        "asp": 1.0,
+        "mng": 1.0
+    },
+    "max_fixed_traits": 4,
+    "texture_id": "resonants_octa:test_sword_basic",
+    "slots": [
+        {
+            "slot_id": "blade",
+            "slot_name": "slot.resonant_octa.blade",
+            "required": true,
+            "min_count": 2,
+            "max_count": 8,
+            "stat_multipliers": {
+                "atk": 1.5,
+                "def": 0.0,
+                "tgh": 1.0,
+                "msp": 0.0,
+                "asp": 0.5,
+                "mng": 1.0
+            }
+        }
+    ]
+}
