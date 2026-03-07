@@ -60,8 +60,8 @@ import org.crafttable.resonantsocta.item.tools.AlchemicalShortbow;
 import org.crafttable.resonantsocta.item.tools.AlchemicalShovel;
 import org.crafttable.resonantsocta.item.tools.AlchemicalSpear;
 import org.crafttable.resonantsocta.item.tools.AlchemicalSword;
-import org.crafttable.resonantsocta.item.utils.AlchemicalArmorBox;
-import org.crafttable.resonantsocta.item.utils.AlchemicalToolBox;
+import org.crafttable.resonantsocta.item.utils.ArmorBox;
+import org.crafttable.resonantsocta.item.utils.ToolBox;
 import org.crafttable.resonantsocta.item.BlueprintItem;
 
 import net.minecraft.world.food.FoodProperties;
@@ -219,12 +219,12 @@ public class ItemRegister {
 				() -> new AlchemicalAnklet(new Item.Properties().stacksTo(1))));
 		AlchemicalToolRegistry.registerImplementedToolType(
 				new ResourceLocation(ResonantsOcta.MODID, "anklet"));
-		ITEMS_LIST.computeIfAbsent("alchemical_tool_box", key -> ITEMS.register(key,
-				() -> new AlchemicalToolBox(new Item.Properties().stacksTo(1))));
+		ITEMS_LIST.computeIfAbsent("tool_box", key -> ITEMS.register(key,
+				() -> new ToolBox(new Item.Properties().stacksTo(1))));
 		AlchemicalToolRegistry.registerImplementedToolType(
 				new ResourceLocation(ResonantsOcta.MODID, "tool_box"));
-		ITEMS_LIST.computeIfAbsent("alchemical_armor_box", key -> ITEMS.register(key,
-				() -> new AlchemicalArmorBox(new Item.Properties().stacksTo(1))));
+		ITEMS_LIST.computeIfAbsent("armor_box", key -> ITEMS.register(key,
+				() -> new ArmorBox(new Item.Properties().stacksTo(1))));
 		AlchemicalToolRegistry.registerImplementedToolType(
 				new ResourceLocation(ResonantsOcta.MODID, "armor_box"));
 

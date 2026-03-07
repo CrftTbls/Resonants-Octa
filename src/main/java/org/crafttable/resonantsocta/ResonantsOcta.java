@@ -13,10 +13,13 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.crafttable.resonantsocta.client.gui.BoxScreen;
 import org.crafttable.resonantsocta.core.RORegistries;
 import org.crafttable.resonantsocta.register.BlockRegister;
 import org.crafttable.resonantsocta.register.CreativeTabRegister;
 import org.crafttable.resonantsocta.register.ItemRegister;
+import org.crafttable.resonantsocta.register.MenuRegister;
+
 import org.slf4j.Logger;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import org.crafttable.resonantsocta.data.alchemical.AlchemicalMatterManager;
@@ -43,6 +46,7 @@ public class ResonantsOcta {
         BlockRegister.setUp();
         ItemRegister.setUp();
         CreativeTabRegister.setUp();
+        MenuRegister.setUp();
 
         // Register connect to eventBus
         RORegistries.register(modEventBus);
@@ -81,6 +85,9 @@ public class ResonantsOcta {
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
             event.enqueueWork(() -> {
+                net.minecraft.client.gui.screens.MenuScreens.register(MenuRegister.MENUS.get("box").get(),
+                        BoxScreen::new);
+
                 ItemProperties.register(ItemRegister.ITEMS_LIST.get("alchemical_matter_item").get(),
                         new ResourceLocation(ResonantsOcta.MODID, "texture_variant"),
                         (stack, level, entity, seed) -> {
